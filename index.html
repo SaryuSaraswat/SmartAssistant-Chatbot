@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Query Button -->
+    <button class="query-btn" onclick="openChat()">Ask Me Anything ?</button>
+
+     <!-- Chatbot Widget -->
+    <div class="chat-container" id="chat-container">
+
+        <div class="chat-header">
+            <h2>Intelligent Chatbot</h2>
+            <button class="close-btn" onclick="closeChat()">X</button>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <p>Hello! How can I help you today?</p>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Ask a question..." onkeydown="if(event.key === 'Enter'){sendMessage()}">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

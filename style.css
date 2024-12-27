@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;  /* Soft White for the body background */
+    color: #333333;  /* Dark gray text color for readability */
+}
+
+/* Query Button */
+.query-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: green;  /* Light Blue for button */
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.query-btn:hover {
+    background-color: #196d52;  /* Light Teal on hover */
+}
+
+/* Chatbot Widget */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f0f0f0;  /* Light Gray for the chatbot */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #085840;  /* Light Blue for the header */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.chat-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.chat-box {
+    padding: 15px;
+    height: 250px;
+    overflow-y: auto;
+    background-color: #FFFDD0;  /* Soft White for message background */
+    border-bottom: 2px solid #82d4bb;  /* Light Blue border */
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: #9adad8;  /* Light Teal for bot messages */
+    color: black;
+}
+
+.user-message {
+    background-color: #ace9c3;  /* Soft Green for user messages */
+    color: black;
+    align-self: flex-end;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;  /* Light Gray for input area */
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;  /* Pale Gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;  /* Soft White for input background */
+    color: black;
+}
+
+button {
+    width: 15%;
+    background-color: #26896b;  /* Light Blue for send button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: green;  /* Light Teal on hover */
+}
+
+/* Show the chatbot */
+.show-chatbot {
+    display: flex;
+    flex-direction: column;
+}
